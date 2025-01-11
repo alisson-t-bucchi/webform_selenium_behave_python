@@ -102,7 +102,7 @@ pip install allure-behave
 
 3. Set up project for Allure
 Make sure Behave test results are generated in a format compatible with Allure:
-- 1. Run Behave with the Allure Plugin: When running your Behave tests, include the -f allure_behave.formatter:AllureFormatter option to use the Allure format and -o allure-results to specify the output directory for the results.
+- Run Behave with the Allure Plugin: When running your Behave tests, include the -f allure_behave.formatter:AllureFormatter option to use the Allure format and -o allure-results to specify the output directory for the results.
 
 Example:
 ```bash
@@ -111,26 +111,26 @@ behave -f allure_behave.formatter:AllureFormatter -o allure-results
 -f: Specifies the report format.
 -o: Specifies the output directory.
 
-- 2. Final Structure: After running the tests, Allure results will be saved in a directory called allure-results.
+- Final Structure: After running the tests, Allure results will be saved in a directory called allure-results.
 
 3. Generate HTML Report
 Once the results are generated, use the Allure Commandline to create the report:
 
-- 1. Run the command to generate and view the report:
+- Run the command to generate and view the report:
 
 ```bash
 allure serve allure-results
 ``` 
 This will open the report in your default browser. The report is served from a temporary local server.
 
-- 2. To create a static report:
+- To create a static report:
 ```bash
 allure generate allure-results -o allure-report
 ```
 - allure-results: Directory containing the raw test results.
 - allure-report: Directory where the HTML report will be saved.
 
-- 3. To view the static report:
+- To view the static report:
 ```bash
 allure open allure-report
 ```
