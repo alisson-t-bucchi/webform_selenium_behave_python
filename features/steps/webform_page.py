@@ -1,4 +1,3 @@
-import time
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -9,7 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 def acess_page_test(context):
 
     context.driver.get("https://www.selenium.dev/selenium/web/web-form.html")
-    time.sleep(2)
 
 @when(u'insert a information in the text input field')
 def fill_text_input_test(context):
