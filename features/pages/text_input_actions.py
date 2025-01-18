@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from features.pages.base_page import BasePage
 
-class TextInputPage(BasePage):
+class TextInputActions(BasePage):
     def __init__(self, driver):
         self.driver = driver
         self.TEXT_INPUT = (By.ID, "my-text-id")
@@ -23,6 +23,3 @@ class TextInputPage(BasePage):
         element = self.wait_for_element(self.TEXTAREA_INPUT)
         element.clear()
         element.send_keys(text)
-
-    def click_submit(self):
-        self.click_button(self.SUBMIT_BUTTON)
