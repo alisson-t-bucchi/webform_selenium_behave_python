@@ -5,13 +5,10 @@ from behave import given, when, then
 from features.pages.base_page import BasePage
 from features.pages.text_input_actions import TextInputActions
 
-time.sleep(5)
 @given(u'open Web form page for scenario 1')
 def acess_page_test(context):
     open_web_form = BasePage(context.driver)
     open_web_form.open_page()
-
-    time.sleep(10)
 
 @when(u'insert a text "{text_input}" in a Text input area')
 def insert_text_input(context, text_input):

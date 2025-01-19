@@ -135,12 +135,13 @@ Example:
 ```bash
 behave -f allure_behave.formatter:AllureFormatter -o allure-results
 ```
--f: Specifies the report format.
--o: Specifies the output directory.
+-f: Specifies the report format.  
+
+-o: Specifies the output directory. 
 
 - Final Structure: After running the tests, Allure results will be saved in a directory called allure-results.
 
-3. Generate HTML Report
+4. Generate HTML Report
 Once the results are generated, use the Allure Commandline to create the report:
 
 - Run the command to generate and view the report:

@@ -13,13 +13,11 @@ def acess_page_test(context):
 def select_color_picker(context):
     color = SelectPickerAndRange(context.driver)
     color.pick_color()
-    time.sleep(5)
 
 @when(u'select a date in a date picker')
 def select_date_picker(context):
     date = SelectPickerAndRange(context.driver)
     date.pick_date()
-    time.sleep(5)
 
 @when(u'change the range in example range bar')
 def change_range_bar(context):

@@ -6,7 +6,6 @@ from features.pages.base_page import BasePage
 from features.pages.file_input_action import FileInput
 from features.pages.select_buttons_action import SelectButtons
 
-time.sleep(5)
 @given(u'open Web form page for scenario 3')
 def acess_page_test(context):
     open_web_form = BasePage(context.driver)
