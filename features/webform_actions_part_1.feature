@@ -1,13 +1,13 @@
 Feature: Execute all actions in Web form page
 
   Background:
-    Given open Web form page
+    Given open Web form page for scenario 1
 
   Scenario Outline: Fill text, password and textarea boxes
     When insert a text "<text_input>" in a Text input area
     And insert a pass "<password_input>" in the Password area
     And insert a long text "<textarea_input>" in the Textarea
-    Then click on Submit button
+    Then click on Submit button for scenario 1
 
     Examples:
       | text_input        | password_input  | textarea_input                                                  |

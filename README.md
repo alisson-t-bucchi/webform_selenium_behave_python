@@ -15,7 +15,20 @@ The goal of this project is to demonstrate how to use **Behave** and **Selenium 
 
 ## 📂 Project Structure
 
-The main code resides in the Behave step definition file, which connects the scenarios described in Gherkin files to Python code. It includes three main steps:
+The main code resides in the Behave step definition file, which connects the scenarios described in Gherkin files to Python code.
+
+## 📝 Step File Organization
+Here's the information organized in a **table format**:  
+
+| **Feature File**                   | **Description of Scenarios**                          | **Step File**                 | **Step Definitions Purpose**                                                       |  
+|------------------------------------|-------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------|  
+| **webform_actions_part_1.feature** | Scenarios for text, password, and textarea inputs.    | **webform_actions_part_1.py** | Contains step definitions for handling input scenarios.                            |  
+| **webform_actions_part_2.feature** | Scenarios for dropdown boxes.                         | **webform_actions_part_2.py** | Contains step definitions for handling dropdown scenarios.                         |  
+| **webform_actions_part_3.feature** | Scenarios for file input, checkbox and radio buttons. | **webform_actions_part_3.py** | Contains step definitions for handling file input and buttons scenarios.           |  
+| **webform_actions_part_4.feature** | Scenarios for color, date picker and range bar.       | **webform_actions_part_4.py** | Contains step definitions for handling color, date picker and range bar scenarios. |
+
+
+It includes three main steps:
 
 1. **Given:** Opens the web form page.
 2. **When:** Enters text into the input field.
@@ -37,6 +50,20 @@ Feature: Test the Selenium Web Form
     Given the browser open Webform page
     When insert a information in the text input field
     Then the submit button will be clicked
+```
+
+## Files project structure
+
+```
+webform_selenium_behave_python/
+├── allure-reports/             # Directory for Allure reports
+├── features/                   # Tests and automation logic
+│   ├── pages/                  # Page Objects (Page Object Pattern)
+│   ├── steps/                  # Step definitions (separated by part)
+│   ├── *.feature               # Gherkin test scenarios
+├── behave.ini                  # Behave configuration
+├── requirements.txt            # Project dependencies
+├── README.md                   # Project documentation
 ```
 
 ## ⚙️ Installation and Setup

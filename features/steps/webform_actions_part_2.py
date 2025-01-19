@@ -1,8 +1,10 @@
+import time
 from behave import given, when, then
 
 from features.pages.base_page import BasePage
 from features.pages.dropdown_actions import DropdownActions
 
+time.sleep(5)
 @given(u'open Web form page for scenario 2')
 def acess_page_test(context):
     open_web_form = BasePage(context.driver)
