@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Behave-related files
+*.log
+rerun.features
+
+# Selenium WebDriver binaries
+*.exe
+*.jar
+*.zip
+
+# Allure Reports
+allure-results/
+allure-report/
+*.html
+*.xml
+*.json
+
+# MacOS system files
+.DS_Store
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Python-specific
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Cache files
+*.cache
+.cache/
